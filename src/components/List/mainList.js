@@ -1,6 +1,6 @@
 import Card from "../UI/Card";
 
-const List = (props) => {
+const mainList = (props) => {
     return (
         <Card>
             <ul>
@@ -12,4 +12,4 @@ const List = (props) => {
     )
 };
 
-export default List;
+export default mainList;

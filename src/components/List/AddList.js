@@ -7,13 +7,17 @@ import Card from "../UI/Card";
 
 
 
-const AddList = () => {
+const AddList = props => {
     const inPut = useRef();
     const [addingList, setAddingList] = useState();
 
     const addingHandler = event => {
         event.preventDefault();
         setAddingList(inPut.current.value);
+
+        props.onAddList(addingList);
+
+        setAddingList('');
     };
 
     return (
@@ -22,7 +26,7 @@ const AddList = () => {
                 <form onSubmit={addingHandler}>
                     <label>Enter List</label>
                     <input ref={inPut}></input>
-                    <button onClick={onSubmit}>Add</button>
+                    <Button type='submit'>Add</Button>
                 </form>
             </Card>
         </Wrapper>
