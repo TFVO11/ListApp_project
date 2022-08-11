@@ -1,23 +1,12 @@
-import React, { useState } from 'react';
-import AddList from './components/List/AddList';
-import mainList from './components/List/mainList';
+import React from "react";
+import TodoListHome from "./pages/Home/TodoListHome";
 
 function App() {
-const [addList, setAddList] = useState();
-
-
-  const onAddHandler = cts => {
-    setAddList((prevCts) => {
-      return [...prevCts, {main: cts}]
-    })
-  };
-
-  return (
-    <React.Fragment>
-      <AddList onAddList={onAddHandler}/>
-      <mainList HasList={addList}/>
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <TodoListHome />
+        </React.Fragment>
+    );
 }
 
 export default App;
