@@ -10,7 +10,7 @@ const AddTodoItem = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        props.onAddTodoItem(addingList);
+        props.onAddTodoItem(addingTodoItem);
         setAddingTodoItem("");
     };
 
