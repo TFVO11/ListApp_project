@@ -1,11 +1,12 @@
 import Card from "../UI/Card";
 
 const TodoListDisplay = (props) => {
+
     return (
         <Card>
             <ul>
                 {props.todoList.map((todoItem) => (
-                    <li>{todoItem.label}</li>
+                    <li onClick={props.onRemove} >{todoItem.label}</li>
                 ))}
             </ul>
         </Card>

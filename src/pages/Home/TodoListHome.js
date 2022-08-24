@@ -12,14 +12,18 @@ function TodoListHome() {
 
     const handleAddTodoItem = (content) => {
         setTodoList((prevTodoList) => {
-            return [...prevTodoList, { label: content }];
+            return [...prevTodoList, { label: content, id: Math.random().toString() }];
         });
+    };
+
+    const handleDelete = id => { //삭제 기능 함수
+        setTodoList(todoList.filter((item) => item.id != id))
     };
 
     return (
         <div>
             <AddTodoItem onAddTodoItem={handleAddTodoItem} />
-            <TodoListDisplay todoList={todoList} />
+            <TodoListDisplay todoList={todoList} onRemove={handleDelete}/>
         </div>
     );
 }
