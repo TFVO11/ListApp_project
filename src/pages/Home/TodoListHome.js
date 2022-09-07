@@ -8,7 +8,7 @@ function TodoListHome() {
      *     { label: "Learn React", isCompleted: false },
      *  ]
      */
-    const [todoList, setTodoList] = useState();
+    const [todoList, setTodoList] = useState([]);
 
     const handleAddTodoItem = (content) => {
         setTodoList((prevTodoList) => {

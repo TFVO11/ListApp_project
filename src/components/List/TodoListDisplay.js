@@ -10,7 +10,11 @@ const TodoListDisplay = (props) => {
             <Card>
                 <ul>
                     {props.todoList && props.todoList.map((todoItem) => (
-                        <li onClick={props.onRemove} >{todoItem.label}</li>
+                        <li
+                            key={todoItem.id}
+                            onClick={() => props.onRemove(todoItem.id)} >
+                            {todoItem.label}
+                        </li>
                     ))}
                 </ul>
             </Card>
