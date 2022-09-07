@@ -17,7 +17,7 @@ function TodoListHome() {
     };
 
     const handleDelete = id => { //삭제 기능 함수
-        setTodoList(todoList.filter((item) => item.id != id))
+        setTodoList(todoList.filter((item) => item.id !== id))
     };
 
     return (
@@ -25,6 +25,7 @@ function TodoListHome() {
             <AddTodoItem onAddTodoItem={handleAddTodoItem} />
             <TodoListDisplay todoList={todoList} onRemove={handleDelete}/>
         </div>
+        
     );
 }
 
