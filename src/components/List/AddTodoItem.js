@@ -6,7 +6,7 @@ import Button from "../UI/Button";
 import Card from "../UI/Card";
 
 const AddTodoItem = (props) => {
-    const [addingTodoItem, setAddingTodoItem] = useState();
+    const [addingTodoItem, setAddingTodoItem] = useState("");
 
     const handleSubmit = (event) => {
         event.preventDefault();
