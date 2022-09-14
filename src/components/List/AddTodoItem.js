@@ -21,7 +21,7 @@ const AddTodoItem = (props) => {
     return (
         <Wrapper>
             <Card>
-                <form onSubmit={handleSubmit}>
+                <form className={input} onSubmit={handleSubmit}>
                     <label>Enter List</label>
                     <input
                         onChange={handleChangeInput}
