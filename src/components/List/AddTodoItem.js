@@ -5,6 +5,8 @@ import Wrapper from "../Helpers/Wrapper";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 
+import classes from "./AddTodoItem.module.css";
+
 const AddTodoItem = (props) => {
     const [addingTodoItem, setAddingTodoItem] = useState("");
 
@@ -20,14 +22,14 @@ const AddTodoItem = (props) => {
 
     return (
         <Wrapper>
-            <Card>
-                <form className={input} onSubmit={handleSubmit}>
+            <Card className={classes.input}>
+                <form onSubmit={handleSubmit}>
                     <label>Enter List</label>
                     <input
                         onChange={handleChangeInput}
                         value={addingTodoItem}
                     ></input>
-                    <Button type="submit">Add</Button>
+                    <Button type="submit">ADD</Button>
                 </form>
             </Card>
         </Wrapper>

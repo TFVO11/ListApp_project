@@ -1,9 +1,11 @@
 .button {
-    border: 1px solid tomato;
+    border: 1px solid green;
     color:brown;
-    background-color: yellow;
+    background-color: olive;
     padding: 1rem;
     margin: 1rem;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .button:hover,
