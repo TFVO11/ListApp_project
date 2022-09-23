@@ -1,0 +1,10 @@
+.List {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 50%;
+}
+
+.List ul {
+    padding: 1rem;
+    list-style: none;
+}

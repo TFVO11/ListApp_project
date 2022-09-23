@@ -2,12 +2,13 @@ import React from 'react';
 
 import Wrapper from "../Helpers/Wrapper";
 import Card from "../UI/Card";
+import classes from "./TodoListDisplay.module.css"
 
 const TodoListDisplay = (props) => {
 
     return (
         <Wrapper>
-            <Card>
+            <Card className={classes.List}>
                 <ul>
                     {props.todoList && props.todoList.map((todoItem) => (
                         <li
