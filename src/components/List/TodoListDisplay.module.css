@@ -1,7 +1,7 @@
 .List {
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: 100%;
-    max-width: 50%;
+    max-width: 40rem;
 }
 
 .List ul {

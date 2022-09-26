@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Wrapper from "../../components/Helpers/Wrapper";
 import AddTodoItem from "../../components/List/AddTodoItem";
 import TodoListDisplay from "../../components/List/TodoListDisplay";
 
@@ -21,10 +22,12 @@ function TodoListHome() {
     };
 
     return (
+        <Wrapper>
         <div>
             <AddTodoItem onAddTodoItem={handleAddTodoItem} />
             <TodoListDisplay todoList={todoList} onRemove={handleDelete}/>
         </div>
+        </Wrapper>
         
     );
 }
