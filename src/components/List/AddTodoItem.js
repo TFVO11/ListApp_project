@@ -36,12 +36,13 @@ const AddTodoItem = (props) => {
 
     return (
         <Wrapper>
-            {/* {error && (
+            {error && (
                 <ErrorModal
                 title={error.title}
                 messege={error.message}
+                onConfirm={handleError}
                 />
-            )} */}
+            )}
             <Card className={classes.input}>
                 <form onSubmit={handleSubmit}>
                     <label>Enter List</label>
