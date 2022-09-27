@@ -22,7 +22,7 @@ const AddTodoItem = (props) => {
                 title: 'invalid input',
                 messege: 'Please enter a valid name and age (non-empyt values)'
             });
-            return console.log("error");
+            return;
         }
     };
 
