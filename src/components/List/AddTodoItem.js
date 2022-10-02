@@ -20,7 +20,7 @@ const AddTodoItem = (props) => {
         if (addingTodoItem.trim().length === 0){
             setError({
                 title: 'invalid input',
-                messege: 'Please enter a valid name and age (non-empyt values)'
+                message: 'Please enter a valid name and age (non-empyt values)'
             });
             return;
         }
@@ -39,7 +39,7 @@ const AddTodoItem = (props) => {
             {error && (
                 <ErrorModal
                 title={error.title}
-                messege={error.message}
+                message={error.message}
                 onConfirm={handleError}
                 />
             )}
