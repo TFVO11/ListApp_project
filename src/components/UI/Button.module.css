@@ -3,9 +3,8 @@
     color:#DB6A1A;
     background-color: #2005DB;
     padding: 1rem;
-    margin: 1rem;
+    /* margin: 1rem; */
     border-radius: 10px;
-    /* width: 100%; */
 }
 
 .button:hover,

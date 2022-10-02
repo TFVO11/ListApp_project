@@ -5,6 +5,10 @@
 }
 
 .List ul {
-    padding: 1rem;
     list-style: none;
+    color: tomato;
+}
+
+.List li {
+    padding-bottom: 1rem;
 }
